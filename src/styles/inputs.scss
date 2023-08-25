@@ -1,0 +1,37 @@
+.input-custom {
+  input {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 2px 0px 0px $secondary-color;
+    color: #fff;
+    height: 18px;
+    position: relative;
+
+    &::placeholder {
+      color: #fff;
+      text-align: left;
+      font-family: $font-family-lora;
+      font-size: 18px;
+      font-style: normal;
+      line-height: normal;
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.icon-input-custom {
+    position: absolute;
+    left: 0;
+    top: 0;
+}

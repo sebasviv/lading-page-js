@@ -1,6 +1,102 @@
-.background-image-custom  {
-    background-image: url('../assets/home/Cenefa_agendamiento.png'); 
-    max-width: 100%; 
-    max-height: 461px; 
-    height: 100%;
+.background-image-custom {
+  background-image: url("../assets/home/Cenefa_agendamiento.png");
+  max-width: 100%;
+  max-height: 461px;
+  height: 461px;
+}
+
+.header-home {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+  .header-custom {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-custom {
+      display: flex;
+      gap: 32px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        line-height: normal;
+
+        &:hover {
+          box-shadow: 0px 3px 0px 0px $secondary-color;
+        }
+      }
+    }
+    .btn-actions-group {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+
+      .icon-search {
+        display: flex;
+        flex-direction: row;
+
+        .diviser {
+          width: 1px;
+          background-color: #fff;
+          margin-left: 8px;
+          height: 18px;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+
+        svg {
+          cursor: pointer;
+          padding: 2px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .diviser {
+    width: 1px;
+    background-color: #fff;
+    margin-left: 8px;
+    height: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .diviser-02 {
+    width: 1px;
+    background-color: #fff;
+    height: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .title-home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .actions-home {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    .date-label {
+      width: 428px;
+      height: 51.097px;
+      border-radius: 8px;
+      background: $secondary-color;
+      display: flex;
+      flex-direction: row;
+      font-weight: 400;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 80px;
+    }
+  }
 }
