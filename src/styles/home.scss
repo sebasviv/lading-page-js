@@ -2,13 +2,15 @@
   background-image: url("../assets/home/Cenefa_agendamiento.png");
   max-width: 100%;
   max-height: 461px;
-  height: 461px;
+  height: 100%;
 }
 
 .header-home {
   display: flex;
   flex-direction: column;
   gap: 45px;
+  padding-bottom: 30px;
+  text-align: center;
 
   .header-custom {
     padding-top: 50px;
@@ -68,13 +70,7 @@
     margin-bottom: auto;
   }
 
-  .diviser-02 {
-    width: 1px;
-    background-color: #fff;
-    height: 18px;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+
 
   .title-home {
     display: flex;
@@ -86,6 +82,8 @@
     flex-direction: row;
     gap: 30px;
     align-items: center;
+    justify-content: center;
+
     .date-label {
       width: 428px;
       height: 51.097px;
@@ -99,4 +97,75 @@
       padding: 15px 80px;
     }
   }
+}
+
+.landing-form-home {
+  background-image: url("../assets/home/Imagen_header.png");
+  max-height: 867px;
+  height: 867px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 260px;
+  padding-left: 20%;
+  padding-right: 10%;
+
+  .landing-title {
+    display: flex;
+    width: 589px;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .landing-container-form {
+    width: 522px;
+    height: 586px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+
+    .x-icon {
+      color: $secondary-color;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 45px;
+    }
+
+    .landing-form {
+      padding: 46px;
+
+      .subtitle-form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 64px;
+      }
+
+      .inputs-group {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: flex-start;
+      }
+
+      button {
+        width: 90% !important;
+      }
+    }
+  }
+}
+
+.diviser-02 {
+  width: 1px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: #fff;
+  height: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
