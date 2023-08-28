@@ -1,0 +1,114 @@
+.card-potrait {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.12);
+
+  img {
+    margin-bottom: 24px;
+    max-width: 580px;
+    max-height: 490px;
+  }
+
+  .card-potrait-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .card-potrait-title {
+      color: #000;
+      font-family: $font-family-lora;
+      font-size: 32px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .card-potrait-subtitle {
+      color: #92a5b8;
+      font-family: $font-family-hind-madurai;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.68px;
+      margin-bottom: 14px;
+    }
+
+    .card-potrait-schedule {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+
+      .card-potrait-text {
+        width: 90%;
+        text-align: center;
+        font-family: $font-family-lora;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+      }
+    }
+  }
+}
+
+.card-landscape {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-height: 214px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.12);
+
+  img {
+    max-width: 342px;
+    max-height: 213px;
+  }
+
+  .card-landscape-text {
+    padding: 21px 26px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .card-landscape-title {
+        color: #000;
+        font-family: $font-family-lora;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 4px;
+    }
+
+    .card-landscape-subtitle {
+        color: #92a5b8;
+        font-family: $font-family-hind-madurai;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.68px;
+        margin-bottom: 14px;
+    }
+
+    .card-landscape-schedule {
+        display: flex;
+
+        .card-landscape-text {
+            width: 90%;
+            text-align: center;
+            font-family: $font-family-lora;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 133.333% */
+        }
+    }
+  }
+}

@@ -110,6 +110,7 @@
   gap: 260px;
   padding-left: 20%;
   padding-right: 10%;
+  margin-bottom: 160px;
 
   .landing-title {
     display: flex;
@@ -154,10 +155,15 @@
       }
 
       button {
-        width: 90% !important;
+        width: 100% !important;
+        text-transform: uppercase;
       }
     }
   }
+}
+
+.home-body {
+ 
 }
 
 .diviser-02 {

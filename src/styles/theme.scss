@@ -71,6 +71,28 @@ body {
   line-height: 85.643px; /* 113.702% */
 }
 
+.text-h2 {
+  color: $primary-color;
+  font-family: $font-family-lora;
+  font-size: 65px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.548px;
+  position: relative;
+  padding-left: 85px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 65px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: $secondary-color; /* Color de la línea */
+    bottom: 32px; /* Ajusta la posición vertical de la línea */
+    left: 0; /* Posición horizontal de la línea */
+  }
+}
+
 .text-05 {
   color: $secondary-color;
   font-family: $font-family-hind-madurai;
@@ -87,4 +109,26 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.text-07 {
+  color: $primary-color;
+  font-family: $font-family-lora;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: -0.68px;
+  text-transform: capitalize;
+}
+
+.text-08 {
+  color: #29354b;
+  text-align: center;
+  font-family: $font-family-lora;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
 }
