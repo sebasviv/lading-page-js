@@ -77,37 +77,133 @@
     width: 100%;
 
     .card-landscape-title {
-        color: #000;
-        font-family: $font-family-lora;
-        font-size: 32px;
-        font-style: italic;
-        font-weight: 600;
-        line-height: normal;
-        margin-bottom: 4px;
+      color: #000;
+      font-family: $font-family-lora;
+      font-size: 32px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 4px;
     }
 
     .card-landscape-subtitle {
-        color: #92a5b8;
-        font-family: $font-family-hind-madurai;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 1.68px;
-        margin-bottom: 14px;
+      color: #92a5b8;
+      font-family: $font-family-hind-madurai;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.68px;
+      margin-bottom: 14px;
     }
 
     .card-landscape-schedule {
-        display: flex;
+      display: flex;
 
-        .card-landscape-text {
-            width: 90%;
-            text-align: center;
-            font-family: $font-family-lora;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px; /* 133.333% */
+      .card-landscape-text {
+        width: 90%;
+        text-align: center;
+        font-family: $font-family-lora;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+      }
+    }
+  }
+}
+
+.card-blog {
+  display: flex;
+  flex-direction: column;
+  height: 570px;
+  filter: drop-shadow(
+      0px 2.767256498336792px 6.226326942443848px rgba(0, 0, 0, 0.02)
+    )
+    drop-shadow(
+      0px 6.650102138519287px 14.962729454040527px rgba(0, 0, 0, 0.03)
+    )
+    drop-shadow(
+      0px 12.521552085876465px 28.173492431640625px rgba(0, 0, 0, 0.04)
+    )
+    drop-shadow(0px 22.3363094329834px 50.25669479370117px rgba(0, 0, 0, 0.04))
+    drop-shadow(
+      0px 41.777610778808594px 93.99961853027344px rgba(0, 0, 0, 0.05)
+    )
+    drop-shadow(0px 100px 225px rgba(0, 0, 0, 0.07));
+
+  .image-content {
+    position: relative;
+  }
+
+  img {
+    max-width: 373px;
+    max-height: 363px;
+  }
+
+  .card-blog-content {
+    width: 352.311px;
+    height: 305.014px;
+    background: #fff;
+    box-shadow: 0px 4.197674751281738px 10.494186401367188px 0px
+      rgba(0, 0, 0, 0.25);
+    padding: 45px 16px;
+    position: absolute;
+    top: 260px;
+    left: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 5px; /* Ancho de la línea */
+      height: 42px; /* Grosor de la línea */
+      background-color: $secondary-color; /* Color de la línea */
+      top: 50px; /* Ajusta la posición vertical de la línea */
+      left: 0; /* Posición horizontal de la línea */
+    }
+
+    .card-blog-body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      border-bottom: 1px solid #c4c4c4;
+      padding: 8px 16px;
+      .card-date-text {
+        color: $tertiary-color;
+        font-family: $font-family-hind-madurai;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+      }
+
+      .card-text {
+        color: #000;
+        font-family: $font-family-lora;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 16px;
+      }
+    }
+
+    .card-blog-footer {
+      display: flex;
+      color: #000;
+      font-family: $font-family-lora;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      justify-content: space-between;
+      margin-top: 16%;
+
+        .card-footer-item {
+          display: flex;
+          gap: 8px;
+          align-items: center;
         }
     }
   }
