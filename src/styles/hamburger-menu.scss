@@ -1,0 +1,108 @@
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: $breakpoint-mobile) {
+        display: flex !important;
+        position: relative;
+    }
+}
+
+.hamburger-menu-content {
+    color: #fff;
+    top: 0;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: $secondary-color;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .action-bar {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 16px;
+        align-items: center;
+
+        .btn-close {
+            opacity: .8 !important;
+        }
+       
+        .diviser {
+            width: 1px;
+            background-color: #fff;
+            margin: 0px 16px;
+            height: 18px;
+        }
+    }
+}
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-out-right {
+	-webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+@-webkit-keyframes slide-out-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+  }
+  

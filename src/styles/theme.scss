@@ -23,6 +23,8 @@ $font-family-hind: "Hind", sans-serif;
 
 $font-family-hind-madurai: "Hind Madurai", sans-serif;
 
+$breakpoint-mobile: 375px;
+
 body {
   font-family: $font-family-lora;
 }
@@ -36,10 +38,11 @@ body {
 .text-01 {
   color: #fff;
   text-align: center;
-  font-family: $font-family-lora;
-  font-size: 18px;
-  font-style: normal;
-  line-height: normal;
+  font-family: Lora;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
 }
 
 .text-03 {
@@ -51,6 +54,13 @@ body {
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 108.333% */
+  }
 }
 
 .text-04 {
@@ -60,6 +70,13 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 126.316% */
+
+  @media (max-width: $breakpoint-mobile) {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: -0.154px;
+  }
 }
 
 .text-h1 {
@@ -135,6 +152,11 @@ body {
 
 footer {
   width: 100%;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none !important;
+  }
+
   .footer-content {
     background-color: $primary-color;
     height: 323px;

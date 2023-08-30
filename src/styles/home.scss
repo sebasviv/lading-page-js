@@ -1,5 +1,6 @@
 .background-image-custom {
   background-image: url("../assets/home/Cenefa_agendamiento.png");
+  background-size: auto;
   max-width: 100%;
   max-height: 461px;
   height: 100%;
@@ -70,8 +71,6 @@
     margin-bottom: auto;
   }
 
-
-
   .title-home {
     display: flex;
     flex-direction: column;
@@ -97,6 +96,48 @@
       padding: 15px 80px;
     }
   }
+
+  @media (max-width: $breakpoint-mobile) {
+    .header-custom {
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+
+      img {
+        margin-bottom: 0px !important;
+      }
+    }
+
+    .btn-actions-group {
+      display: none !important;
+    }
+
+    .navbar-custom {
+      display: none !important;
+    }
+    .text-03 {
+      margin-bottom: 16px;
+    }
+
+    .date-label {
+      width: 100% !important;
+      padding: 15px 30px !important;
+      justify-content: space-evenly !important;
+    }
+
+    .input-custom {
+      display: none;
+    }
+    .title-home{
+      .text-04 {
+        display: block;
+      }
+    }
+
+    .text-04 {
+      display: none;
+    }
+  }
 }
 
 .landing-form-home {
@@ -111,6 +152,10 @@
   padding-left: 20%;
   padding-right: 10%;
   margin-bottom: 160px;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
 
   .landing-title {
     display: flex;
@@ -163,7 +208,9 @@
 }
 
 .home-body {
- 
+  @media (max-width: $breakpoint-mobile) {
+    display: none !important;
+  }
 }
 
 .diviser-02 {
