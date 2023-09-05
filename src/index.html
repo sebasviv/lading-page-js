@@ -379,19 +379,26 @@
                     </div>
                     <span class="text-04">For those locals who ride regularly with us, we’ve got a whole section
                         <br> dedicated to you!</span>
-                    <div class="dropdown-custom" id="dropdown-custom">
-                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="51" height="51">
-                                <circle cx="25.5" cy="25.5" r="25" stroke="white" />
-                            </mask>
-                            <g mask="url(#mask0_0_1)">
-                                <path d="M-6 -2H54V28H-6V-2Z" fill="#D9D9D9" />
-                            </g>
-                            <path
-                                d="M24.6755 20L18 10L20.8962 10L26.053 18.0048L31.1391 10L34 10L27.3598 20L24.6755 20Z"
-                                fill="#C4C4C4" />
-                        </svg>
+                    <div class="dropdown-group">
+                        <div class="dropdown-open dropdown-custom" id="dropdown-open">
+                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                    width="51" height="51">
+                                    <circle cx="25.5" cy="25.5" r="25" stroke="white" />
+                                </mask>
+                                <g mask="url(#mask0_0_1)">
+                                    <path d="M-6 -2H54V28H-6V-2Z" fill="#D9D9D9" />
+                                </g>
+                                <path
+                                    d="M24.6755 20L18 10L20.8962 10L26.053 18.0048L31.1391 10L34 10L27.3598 20L24.6755 20Z"
+                                    fill="#C4C4C4" />
+                            </svg>
+                        </div>
+                        <div class="dropdown-close" id="dropdown-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="rgb(180, 180, 180)" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                              </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-image landing-form-home">
@@ -402,7 +409,7 @@
                         </span>
                     </div>
                     <div class="btn-learn-more">
-                        <button>
+                        <div class="d-flex align-items-center gap-3">
                             <span class="text-h1">Learn More</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16"
                                 fill="none">
@@ -410,18 +417,18 @@
                                     d="M10.2712 10.4728L9.36605 9.60119L5.77755 13.0506V0.582031H4.49365V13.0506L0.911569 9.59501L0 10.4728L5.1356 15.4182L10.2712 10.4728Z"
                                     fill="white" />
                             </svg>
-                        </button>
+                        </div>
                     </div>
                 </div>
                 <div class="container">
-                    <div class="home-body w-100 d-flex flex-column gap-5 align-items-start w-100">
+                    <div class="home-body">
                         <span class="text-h2 ">PRESENTING CARIBBEAN SPRINTER</span>
                         <div class="m-auto">
                             <img src="./assets/home/Portada_video.png" alt="portada-video" width="100%" height="auto">
                         </div>
                         <span class="text-h2">SAILING TIMES</span>
-                        <div class="cards-collage w-100 d-flex">
-                            <div class="w-100 d-flex flex-row gap-4 justify-content-center">
+                        <div class="cards-collage">
+                            <div class="cards-collage-content">
                                 <div class="card-potrait">
                                     <img src="./assets/home/Imagen_departing_belize_city.png" alt="" />
                                     <div class="card-potrait-text">
@@ -499,12 +506,12 @@
 
                             </div>
                         </div>
-                        <div class="w-100 d-flex align-items-center flex-column">
-                            <span class="text-07 mb-1">Your Travels with Caribbean Sprinter will Be an unforgettable
+                        <div class="security-section">
+                            <span class="text-07">Your Travels with Caribbean Sprinter will Be an unforgettable
                                 experience!</span>
                             <img src="./assets/home/Logo_Secure_globalsign.png" alt="" width="156px">
                         </div>
-                        <div class="w-100 d-flex align-items-center flex-column">
+                        <div class="w-100 d-flex align-items-center flex-column payment-methods">
                             <span class="text-08 mb-2">Payment methods</span>
                             <div class="d-flex flex-row gap-1">
                                 <img src="./assets/home/Logo_VISA.png" alt="">
@@ -514,7 +521,7 @@
                             </div>
                         </div>
                         <span class="text-h2">BLOG</span>
-                        <div class="cards-blog-group d-flex w-100 gap-3 justify-content-center">
+                        <div class="cards-blog-group">
                             <div class="card-blog">
                                 <div class="image-content">
                                     <img src="./assets/home/Imagen_Blog_1.png" alt="">
@@ -613,7 +620,7 @@
                 </div>
 
                 <footer>
-                    <div class="d-flex flex-row justify-content-between footer-content">
+                    <div class="footer-content">
                         <div class="d-flex flex-column justify-content-center">
                             <img src="./assets/icons/test.svg" alt="" class="mb-2">
                             <div class="d-flex flex-row gap-3 justify-content-center ">
@@ -670,11 +677,16 @@
                             <span class="footer-text">+501 613-2032</span>
                             <span class="footer-text">bookings@sprinter.bz</span>
                         </div>
+                        <div class="terms-conditions-mobile">
+                            <span class="footer-text">Terms & Conditions <br>
+                                Notice & Privacy Policy <br>
+                                Cookies Policy</span>
+                        </div>
                     </div>
-                    <div class="footer-bar  d-flex flex-row justify-content-between align-items-center">
+                    <div class="footer-bar">
                         <span>© 2023 Caribbean Sprinter LTD or its affiliates</span>
                         <div>
-                            <span>Terms & Conditions | Notice & Privacy Policy | Cookies Policy</span>
+                            <span class="terms-conditions-desktop">Terms & Conditions | Notice & Privacy Policy | Cookies Policy</span>
                         </div>
                     </div>
                 </footer>

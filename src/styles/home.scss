@@ -7,9 +7,9 @@
 
   @media (max-width: $breakpoint-mobile) {
     background-image: url("../assets/home/background_mobile.png");
-    max-height: none !important;
     background-size: cover;
     background-repeat: no-repeat;
+    max-height: 700px;
   }
 }
 
@@ -114,13 +114,14 @@
     }
   }
 
-  .dropdown-custom {
+  .dropdown-group {
     display: none;
   }
 
   @media (max-width: $breakpoint-mobile) {
     position: relative;
     padding-bottom: 60px;
+
     .header-custom {
       flex-direction: row;
       gap: 20px;
@@ -170,7 +171,6 @@
         align-items: center;
         justify-content: flex-end;
         display: none;
- 
 
         .input-custom {
           width: 100% !important;
@@ -188,15 +188,34 @@
       }
     }
 
-    .dropdown-custom {
-      width: 100%;
+    .dropdown-group {
       display: flex;
-      justify-content: center;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -23px;
-      margin: auto;
+      .dropdown-custom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -23px;
+        margin: auto;
+      }
+
+      .dropdown-open {
+        display: block;
+      }
+
+      .dropdown-close {
+        display: none;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        left: 0;
+        right: 0;
+        svg {
+          color: #fff;
+        }
+      }
     }
   }
 }
@@ -235,6 +254,9 @@
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
     background-position: center center; /* Centra la imagen horizontal y verticalmente */
     flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 16px;
 
     .landing-container-form {
       display: none;
@@ -252,8 +274,65 @@
 }
 
 .home-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: flex-start;
+
+  .cards-collage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .cards-collage-content {
+      width: 100%;
+      display: flex;
+      gap: 4rem;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+
+  .security-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cards-blog-group {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+
   @media (max-width: $breakpoint-mobile) {
-    display: none !important;
+    background-color: #fff;
+    padding: 3%;
+    gap: 3rem;
+
+    .cards-collage {
+      flex-direction: column;
+
+      .cards-collage-content {
+        flex-direction: column;
+        gap: 3rem;
+      }
+    }
+
+    .payment-methods {
+      img {
+        max-width: 70px;
+      }
+    }
+
+    .cards-blog-group {
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
 }
 
@@ -267,7 +346,6 @@
   margin-bottom: auto;
 }
 
-
 .landing-container-form {
   width: 522px;
   height: 586px;
@@ -280,7 +358,6 @@
   right: 0px;
   top: 80px;
   display: none;
-
 
   .x-icon {
     color: $secondary-color;

@@ -19,10 +19,23 @@ closeButtonMenu.addEventListener('click', () => {
     }, 1000);
 });
 
-const dropDownButton = document.getElementById('dropdown-custom');
-dropDownButton.addEventListener('click', () => {
+
+const dropDownOpen = document.getElementById('dropdown-open');
+const dropDownClose = document.getElementById('dropdown-close');
+dropDownOpen.addEventListener('click', () => {
     const inputsGroup = document.getElementById('inputs-group-header');
     inputsGroup.style.display = "flex";
+    inputsGroup.classList.add('slide-in-right-dropdown');
+    dropDownOpen.style.display = "none";
+    dropDownClose.style.display = "flex";
+});
+
+dropDownClose.addEventListener('click', () => {
+    const inputsGroup = document.getElementById('inputs-group-header');
+    inputsGroup.style.display = "none";
+    dropDownClose.style.display = "none";
+    dropDownOpen.style.display = "flex";
+    
 });
 
 
@@ -30,7 +43,11 @@ const logInButton = document.getElementById('btn-login');
 
 logInButton.addEventListener('click', () => {
     const form = document.getElementById('login-form');
-    form.style.display = "block";
+    if(form.style.display === "block") {
+        form.style.display = "none";
+    }else {
+        form.style.display = "block";
+    }	
 });
 
 const closeButtonForm = document.getElementById('btn-close-login-form');
