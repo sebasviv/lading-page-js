@@ -1,12 +1,12 @@
 .background-image-custom {
-  background-image: url("../assets/home/Cenefa_agendamiento.png");
+  background-image: url("/src/assets/home/Cenefa_agendamiento.png");
   background-size: auto;
   max-width: 100%;
   max-height: 461px;
   height: 100%;
 
   @media (max-width: $breakpoint-mobile) {
-    background-image: url("../assets/home/background_mobile.png");
+    background-image: url("/src/assets/home/background_mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     max-height: 700px;
@@ -221,7 +221,7 @@
 }
 
 .landing-form-home {
-  background-image: url("../assets/home/Imagen_header.png");
+  background-image: url("/src/assets/home/Imagen_header.png");
   max-height: 867px;
   height: 867px;
   display: flex;

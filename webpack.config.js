@@ -34,4 +34,7 @@ module.exports = {
       minify: false,
     }),
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
 };
