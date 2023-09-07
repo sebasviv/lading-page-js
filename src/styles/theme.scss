@@ -103,7 +103,8 @@ body {
   font-size: 75.322px;
   font-style: normal;
   font-weight: 400;
-  line-height: 85.643px; /* 113.702% */
+  line-height: 85.643px;
+  
   @media (max-width: $breakpoint-mobile) {
     text-align: center;
     font-size: 24px;
