@@ -1,25 +1,10 @@
 import view from "../views/home.html";
 
 export default () => {
-  const divElement = document.createElement("div");
+    const divElement = document.createElement("div");
   divElement.innerHTML = view;
 
-  const hamburguerMenu = divElement.querySelector("#hamburger-menu");
-  hamburguerMenu.addEventListener("click", () => {
-    const menu = divElement.querySelector("#hamburger-menu-content");
-    menu.style.display = "flex";
-  });
 
-const closeButtonMenu = divElement.querySelector('#close-btn-menu');
-
-closeButtonMenu.addEventListener('click', () => {
-    const menu = divElement.querySelector('#hamburger-menu-content')
-    menu.classList.add('slide-out-right');
-    setTimeout(() => {
-        menu.style.display = 'none';
-        menu.classList.remove('slide-out-right');
-    }, 1000);
-});
 
 const dropDownOpen = divElement.querySelector('#dropdown-open');
 const dropDownClose = divElement.querySelector('#dropdown-close');

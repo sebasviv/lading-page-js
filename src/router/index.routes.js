@@ -1,8 +1,10 @@
 import { pages } from "../controllers/index";
+import { closeMenu } from "../controllers/hamburguer-menu.controller";
 
 const router = async (route) => {
   let content = document.getElementById("root");
   content.innerHTML = "";
+  closeMenu();
 
   switch (route) {
     case "": {

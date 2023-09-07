@@ -23,7 +23,7 @@ $font-family-hind: "Hind", sans-serif;
 
 $font-family-hind-madurai: "Hind Madurai", sans-serif;
 
-$breakpoint-mobile: 375px;
+$breakpoint-mobile: 767px;
 
 body {
   font-family: $font-family-lora;
@@ -38,7 +38,7 @@ body {
 .text-01 {
   color: #fff;
   text-align: center;
-  font-family: Lora;
+  font-family:  $font-family-lora;
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
@@ -60,6 +60,24 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 108.333% */
+  }
+}
+
+.text-03-01 {
+  color: #fff;
+  text-align: center;
+  font-family: $font-family-lora;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 51.2px;
+  text-transform: capitalize;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51.2px; 
   }
 }
 
@@ -184,6 +202,14 @@ body {
   }
 }
 
+.text-paragraph-01 {
+  font-family: $font-family-hind-madurai;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
 .text-01-mobile {
   color: $secondary-color;
   text-align: center;
@@ -207,7 +233,7 @@ body {
 
 footer {
   width: 100%;
- 
+
   .footer-content {
     background-color: $primary-color;
     height: 323px;
@@ -291,4 +317,8 @@ footer {
       display: none;
     }
   }
+}
+
+#root {
+  min-height: 100vh;
 }
