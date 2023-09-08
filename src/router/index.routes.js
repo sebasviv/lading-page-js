@@ -6,6 +6,8 @@ const router = async (route) => {
   content.innerHTML = "";
   closeMenu();
 
+  console.log("route: ", route)
+
   switch (route) {
     case "": {
         return content.appendChild(pages.home());
@@ -16,6 +18,9 @@ const router = async (route) => {
     case "#/about-us": {
         return content.appendChild(pages.aboutUs());
     }
+    case "#/pre-register": {
+      return content.appendChild(pages.preRegister());
+  }
     default: {
       return content.appendChild(pages.notFound());
     }

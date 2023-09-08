@@ -1,0 +1,290 @@
+.text-02 {
+  font-size: 16px;
+  line-height: normal;
+  color: $secondary-color;
+}
+
+.text-01 {
+  color: #fff;
+  text-align: center;
+  font-family: $font-family-lora;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+}
+
+.text-01-03 {
+  color: $secondary-color;
+  font-family: $font-family-lora;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-01-02 {
+  color: #D1D7E6;
+  font-family: $font-family-lora;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 22px; /* 122.222% */
+
+  @media (max-width: $breakpoint-mobile) {
+    font-family: $font-family-lora;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.011em;
+    text-align: center;
+  }
+}
+
+.text-03 {
+  color: #fff;
+  text-align: center;
+  font-family: $font-family-lora;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 108.333% */
+  }
+}
+
+.text-03-01 {
+  color: #fff;
+  text-align: center;
+  font-family: $font-family-lora;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 51.2px;
+  text-transform: capitalize;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51.2px;
+  }
+}
+
+.text-03-02 {
+  color: #fff;
+  font-family: $font-family-lora;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 35px; /* 109.375% */
+  letter-spacing: -0.64px;
+  text-transform: capitalize;
+}
+
+.text-04 {
+  color: #fff;
+  font-family: $font-family-hind-madurai;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 126.316% */
+
+  @media (max-width: $breakpoint-mobile) {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: -0.154px;
+  }
+}
+
+.text-h1 {
+  color: #fff;
+  font-family: $font-family-lora;
+  font-size: 75.322px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 85.643px;
+
+  @media (max-width: $breakpoint-mobile) {
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 108.333% */
+  }
+}
+
+.text-h1-02 {
+  color: #fff;
+  font-family: $font-family-lora;
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 68px; /* 121.429% */
+  letter-spacing: -1.12px;
+  text-transform: capitalize;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-family: $font-family-lora;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+.text-h2 {
+  color: $primary-color;
+  font-family: $font-family-lora;
+  font-size: 65px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.548px;
+  position: relative;
+  padding-left: 85px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 65px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: $secondary-color; /* Color de la línea */
+    top: 50%; /* Ajusta la posición vertical de la línea */
+    left: 0; /* Posición horizontal de la línea */
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.54786217212677px;
+    text-align: left;
+  }
+}
+
+.text-05 {
+  color: $secondary-color;
+  font-family: $font-family-hind-madurai;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-06 {
+  color: #92a5b8;
+  font-family: $font-family-hind-madurai;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-06-02 {
+  color: #92a5b8;
+  font-family: $font-family-hind-madurai;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 123.077% */
+  text-transform: uppercase;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-family: $font-family-hind-madurai;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.011em;
+    text-align: center;
+  }
+}
+
+.text-06-03 {
+  color: #fff;
+  font-family: $font-family-hind-madurai;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+}
+
+.text-07 {
+  color: $primary-color;
+  font-family: $font-family-lora;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: -0.68px;
+  text-transform: capitalize;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+}
+
+.text-08 {
+  color: #29354b;
+  text-align: center;
+  font-family: $font-family-lora;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+
+  @media (max-width: $breakpoint-mobile) {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+}
+
+.text-paragraph-01 {
+  font-family: $font-family-hind-madurai;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
+.text-01-mobile {
+  color: $secondary-color;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "dlig" on;
+  font-family: $font-family-lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-02-mobile {
+  color: #fff;
+  font-family: $font-family-lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
