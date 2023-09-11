@@ -24,6 +24,9 @@ const router = async (route) => {
     case "#/rewards": {
       return content.appendChild(pages.rewards());
     }
+    case "#/check-in": {
+      return content.appendChild(pages.checkIn());
+    }
     default: {
       return content.appendChild(pages.notFound());
     }

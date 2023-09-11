@@ -20,7 +20,7 @@
 
                 </div>
                 <div class="diviser"></div>
-                <button class="btn-secondary-custom">
+                <button class="btn-secondary-custom" onclick="window.location.href = '#/check-in'">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
                         <path
                             d="M5.22063 13.0012V18C5.22063 18.5523 5.66835 19 6.22063 19H14.2129C14.7652 19 15.2129 18.5523 15.2129 18V2C15.2129 1.44772 14.7652 1 14.2129 1H8.22063C6.56378 1 5.22063 2.34315 5.22063 4V5.98435M0.785156 13.9711V12.4961C0.785156 10.8392 2.1283 9.49606 3.78516 9.49606H10.7739M9.80688 7.50357L11.8328 9.55465L9.80688 11.5996"
@@ -71,7 +71,7 @@
             <span class="text-h1">Ensure you are enrolled in the <br> Caribbean Sprinter Rewards <br> Program to earn
                 points!</span>
         </div>
-        <div class="rewards-body container d-flex flex-column gap-5 ">
+        <div class="rewards-body container d-flex flex-column gap-5 mb-4">
             <span class="text-paragraph-01 text-center">The Caribbean Sprinter Rewards Program is designed for frequent
                 travelers to
                 accumulate points for each segment traveled. To accumulate these, you must be enrolled in the Rewards
@@ -80,12 +80,13 @@
 
             <div class="d-flex flex-column gap-5">
                 <span class="text-h2">Collecting Points</span>
-                <span class="text-paragraph-01 ">Caribbean Sprinter Rewards Points Members receive points posted to
+                <span class="text-paragraph-01 text-md-start text-center">Caribbean Sprinter Rewards Points Members
+                    receive points posted to
                     their rider accounts each time they ride a segment. The point amounts are as follows:</span>
 
-                <div class="d-flex flex-row gap-2">
-                    <div class="collage-points">
-                        <div class="d-flex flex-row gap-3">
+                <div class="d-flex flex-md-row flex-column gap-5">
+                    <div class="collage-points w-md-50 w-100">
+                        <div class="d-flex flex-md-row flex-column gap-3">
                             <div class="collage-points-item">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
                                     fill="none">
@@ -133,8 +134,300 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="d-flex flex-column gap-5 w-md-50 w-100 text-md-start text-center">
+                        <div class="d-flex flex-md-row flex-column gap-3 align-items-center">
+                            <img src="/src/assets/rewards/Check.png" alt="">
+                            <span class="text-paragraph-01 ">
+                                If you have a round trip itinerary between Belize City and San Pedro, you will earn 125
+                                Sprinter Rewards Points for each segment, totaling 250 points.
+                            </span>
+                        </div>
+                        <div class="d-flex flex-md-row flex-column gap-3 align-items-center">
+                            <img src="/src/assets/rewards/Check.png" alt="">
+                            <span class="text-paragraph-01 ">
+                                If you have a round trip itinerary between Belize City and Caye Caulker, you will earn
+                                80 Sprinter Rewards Points for each segment, totaling 160 points.
+                            </span>
+                        </div>
+                        <div class="d-flex flex-md-row flex-column gap-3 align-items-center">
+                            <img src="/src/assets/rewards/Check.png" alt="">
+                            <span class="text-paragraph-01 ">
+                                If you have a round trip itinerary between Caye Caulker and San Pedro, you will earn 80
+                                Sprinter Rewards Points for each segment, totaling 160 points.
+                            </span>
+                        </div>
+                    </div>
                 </div>
+                <span class="text-h2">POINTS REDEMPTION</span>
+                <span class="text-paragraph-01 ">Points are redeemable for free travel and for the purchase of upgrades,
+                    merchandise, and more. The
+                    first travel rewards are available starting at only 900 points.</span>
+                <div class="collage-points w-100">
+                    <div class="d-flex flex-md-row flex-column align-items-center gap-3">
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Caye Caulker & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">80 Points</span>
+                            </div>
+                        </div>
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Caye Caulker & San Pedro</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">80 Points</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collage-points-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
+                            <path opacity="0.3"
+                                d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                fill="#006E7A" />
+                            <path d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                fill="#006E7A" />
+                        </svg>
+                        <span class="text-01-assistant">Belize City & Belize City</span>
+                        <div class="box-point">
+                            <span class="text-02-assistant">125 Points</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3 align-items-center">
+                        <span class="text-07">Login to your Rider Account</span>
+                        <button class="btn-primary-custom" id="btn-login">
+                            <span class="text-01">LOGIN</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rewards-banner mb-5">
+            <span class="text-03-01">Passengers who ride at least 5 segments within the same calendar month receive a
+                25% points bonus for all the points accumulated within that same month.</span>
+        </div>
+        <div class="container d-flex flex-column gap-5">
+            <span class="text-h2">BONUS POINTS</span>
+            <div class="container d-flex flex-md-row flex-column gap-5 rewards-bonus-points">
+                <span class="text-paragraph-01 text-md-start text-center">
+                    The Caribbean Sprinter Rewards Program now offers a 25% points bonus for all passengers who travel
+                    more than 5 segments within the same calendar month. The bonus points are earned on all points
+                    accumulated within the month more than 5 segments were traveled. A segment consists of an origin and
+                    destination. For example, if you travel round trip between Belize City and San Pedro, you traveled 2
+                    segments. Therefore, if a passenger who is enrolled in the Sprinter Points program travels at least
+                    twice on round-trip itineraries and once on a one-way itinerary within the same month, that
+                    passenger will receive the 25% bonus points for all points earned during that month. Bonus points
+                    will be credited to rider accounts on the first day of the following month. The Bonus Points
+                    Program replaces the legacy membership pricing. Moving forward all passengers will pay the same
+                    fares. It is important to ensure you are enrolled in the Points Program. You can enroll in person or
+                    by contacting customer service online through the chat feature on our website, www.sprinter.bz, or
+                    by messaging us on Facebook or WhatsApp. The Bonus Points Program creates a landscape where
+                    passengers earn their discount, and it allows for a fairer distribution of rewards for our frequent
+                    travelers. This allows for the member price or better price to be earned without implementing a
+                    monthly membership fee. Students are also eligible for Bonus Points unless they are on a monthly
+                    sailing pass.If you have any questions, please reach out to our <strong>customer service
+                        department.</strong>
+                </span>
+                <div class="w-100 d-flex justify-content-center">
+                    <div>
+                        <img src="/src/assets/rewards/Imagen_BONUS_POINTS.png" alt="" width="751px">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column text-center">
+                <span class="text-07">STANDARD POINTS EARNED PER SEGMENT</span>
+                <div class="d-flex flex-md-row flex-column">
+                    <div class="collage-points d-flex flex-md-row flex-column">
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="text-07">TOTAL POINTS EARNED PER SEGMENT WITH BONUS</span>
+                <div class="d-flex flex-md-row flex-column">
+                    <div class="collage-points d-flex flex-md-row flex-column">
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="text-07">POINTS REDEMPTION PER SEGMENT</span>
+                <div class="d-flex flex-md-row flex-column">
+                    <div class="collage-points d-flex flex-md-row flex-column">
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                        <div class="collage-points-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M22.9999 39.3749C27.4757 39.3747 31.7681 37.5964 34.9327 34.4314C38.0974 31.2664 39.8752 26.9738 39.8749 22.498C39.8747 18.0223 38.0964 13.7299 34.9314 10.5652C31.7664 7.40056 27.4738 5.6228 22.998 5.62305C20.7819 5.62317 18.5874 6.0598 16.54 6.90801C14.4925 7.75622 12.6322 8.99939 11.0652 10.5666C7.90056 13.7316 6.1228 18.0241 6.12305 22.4999C6.1233 26.9757 7.90153 31.2681 11.0666 34.4327C14.2316 37.5974 18.5241 39.3752 22.9999 39.3749Z"
+                                    fill="#006E7A" />
+                                <path
+                                    d="M29.6373 15.8625L26.9748 26.475L16.3623 29.1375L19.0248 18.525L29.6373 15.8625Z"
+                                    fill="#006E7A" />
+                            </svg>
+                            <span class="text-01-assistant">Belize City & Belize City</span>
+                            <div class="box-point">
+                                <span class="text-02-assistant">125 Points</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="text-h2">TO REDEEM POINTS</span>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="stepper-custom">
+                    <div class="stepper-item">
+                        <img src="/src/assets/rewards/TO REDEEM POINTS 1.png" alt="">
+                        </img>
+                        <span>Go to www.sprinter.bz</span>
+                    </div>
+                    <div class="stepper-item ">
+                        <img src="/src/assets/rewards/TO REDEEM POINTS 2.png" alt="">
+                        <span>Click on ‘Residents & Frequent Riders’ at the bottom of the page</span>
+                    </div>
+                    <div class="stepper-item">
+                        <img src="/src/assets/rewards/TO REDEEM POINTS 3.png"  alt="">
+                        <span>Login or Sign-up for Portal Access</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center gap-5 align-items-center">
+                <span class="text-09">You can redeem your points at the Portal.</span>
+                <button class="btn-primary-custom" id="btn-login">
+                    <span class="text-01">LOGIN</span>
+                </button>
+                <span class="text-paragraph-01 text-center">Please note that to set up Portal Access you must have your
+                    phone number and email in your
+                    rider profile. Customer Service can assist in updating any missing information through the
+                    online chat feature of the website.</span>
             </div>
         </div>
     </div>
