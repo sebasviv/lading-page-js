@@ -1,13 +1,11 @@
 import { pages } from "../controllers/index";
 import { closeMenu } from "../controllers/hamburguer-menu.controller";
 
+
 const router = async (route) => {
   let content = document.getElementById("root");
   content.innerHTML = "";
   closeMenu();
-
-  console.log("route: ", route);
-
   switch (route) {
     case "": {
       return content.appendChild(pages.home());
@@ -26,6 +24,12 @@ const router = async (route) => {
     }
     case "#/check-in": {
       return content.appendChild(pages.checkIn());
+    }
+    case "#/blog": {
+      return content.appendChild(pages.blog());
+    }
+    case "#/blog-article": {
+      return content.appendChild(pages.blog());
     }
     default: {
       return content.appendChild(pages.notFound());
