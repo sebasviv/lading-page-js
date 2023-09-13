@@ -1,6 +1,3 @@
-// const root = document.getElementById("root");
-// const menu = document.getElementById("hamburger-menu-content");
-
 const hamburguerMenu = document.getElementById("hamburger-menu");
 const closeButtonMenu = document.getElementById("close-btn-menu");
 
