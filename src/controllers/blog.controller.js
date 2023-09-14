@@ -21,7 +21,13 @@ export default () => {
     form.style.display = "none";
   });
 
+  const cardBlog = divElement.querySelector("#card-blog");
 
+  if (cardBlog) {
+    cardBlog.addEventListener("click", () => {
+      window.location.hash = "#/blog-article";
+    });
+  }
 
   return divElement;
 };
