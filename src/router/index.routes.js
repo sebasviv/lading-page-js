@@ -28,6 +28,9 @@ const router = async (route) => {
     case "#/blog": {
       return content.appendChild(pages.blog());
     }
+    case "#/blog-article": {
+      return content.appendChild(pages.blogArticle());
+    }
     default: {
       return content.appendChild(pages.notFound());
     }

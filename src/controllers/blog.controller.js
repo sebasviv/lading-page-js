@@ -1,5 +1,6 @@
 import view from "../views/blog.html";
-import blogArticleController from "./blog-article.controller";
+import newBlogController from "./newBlog.controller";
+
 
 export default () => {
   const divElement = document.createElement("div");
@@ -26,7 +27,7 @@ export default () => {
   if (cardBlog) {
     cardBlog.forEach(function (div) {
       div.addEventListener("click", function () {
-        blogArticleController(div.id);
+        newBlogController(div.id);
       });
     });
   }

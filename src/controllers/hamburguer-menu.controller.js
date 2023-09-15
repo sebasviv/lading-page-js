@@ -6,7 +6,6 @@ hamburguerMenu.addEventListener("click", () => {
   menu.style.display = "flex";
 
   setTimeout(() => {
-    console.log("cargo root");
     const body = document.body;
     if (body.style.overflowY !== "hidden") {
       body.style.overflowY = "hidden";

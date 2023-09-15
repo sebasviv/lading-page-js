@@ -1,5 +1,5 @@
 import view from "../views/home.html";
-import blogArticleController from "./blog-article.controller";
+import newBlogController from "./newBlog.controller";
 
 export default () => {
     const divElement = document.createElement("div");
@@ -46,7 +46,7 @@ const cardBlog = divElement.querySelectorAll(".card-blog");
 if (cardBlog) {
   cardBlog.forEach(function (div) {
     div.addEventListener("click", function () {
-      blogArticleController(div.id);
+      newBlogController(div.id);
     });
   });
 }
