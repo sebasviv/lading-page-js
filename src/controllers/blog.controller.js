@@ -28,6 +28,5 @@ export default () => {
       window.location.hash = "#/blog-article";
     });
   }
-
   return divElement;
 };
