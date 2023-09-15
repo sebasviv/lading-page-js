@@ -82,8 +82,8 @@
     background-image: linear-gradient(
         to left,
         white 0%,
-        white 20%,
-        transparent 20%,
+        white 25%,
+        transparent 25%,
         transparent 100%
       ),
       url("/src/assets/pre-register/Fondo_Pre_register.png");
@@ -162,6 +162,9 @@
         max-width: 327px;
       }
 
+      .pre-register-form {
+        width: 100%;
+      }
  
     }
   }

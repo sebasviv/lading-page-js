@@ -1,4 +1,5 @@
 import view from "../views/blog.html";
+import blogArticleController from "./blog-article.controller";
 
 export default () => {
   const divElement = document.createElement("div");
@@ -21,12 +22,14 @@ export default () => {
     form.style.display = "none";
   });
 
-  const cardBlog = divElement.querySelector("#card-blog");
-
+  const cardBlog = divElement.querySelectorAll(".card-blog");
   if (cardBlog) {
-    cardBlog.addEventListener("click", () => {
-      window.location.hash = "#/blog-article";
+    cardBlog.forEach(function (div) {
+      div.addEventListener("click", function () {
+        blogArticleController(div.id);
+      });
     });
   }
+
   return divElement;
 };

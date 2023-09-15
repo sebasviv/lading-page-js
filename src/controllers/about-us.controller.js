@@ -1,4 +1,5 @@
 import view from "../views/about-us.html";
+import blogArticleController from "./blog-article.controller";
 
 export default () => {
   const divElement = document.createElement("div");
@@ -20,6 +21,16 @@ export default () => {
     const form = divElement.querySelector("#login-form");
     form.style.display = "none";
   });
+
+
+  const cardBlog = divElement.querySelectorAll(".card-blog");
+  if (cardBlog) {
+    cardBlog.forEach(function (div) {
+      div.addEventListener("click", function () {
+        blogArticleController(div.id);
+      });
+    });
+  }
 
   return divElement;
 };

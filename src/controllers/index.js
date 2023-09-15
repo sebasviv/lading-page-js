@@ -5,7 +5,7 @@ import NotFound from "./404.controller";
 import Rewards from "./rewards.controller";
 import CheckIn from "./check-in.controller";
 import Blog from "./blog.controller";
-import BlogArticle from "./blog-article.controller";
+
 
 const pages = {
   home: Home,
@@ -15,7 +15,6 @@ const pages = {
   checkIn: CheckIn,
   blog: Blog,
   notFound: NotFound,
-  blogArticle: BlogArticle,
 };
 
 

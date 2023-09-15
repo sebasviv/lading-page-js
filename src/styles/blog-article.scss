@@ -60,17 +60,19 @@
   }
 
   .blog-article-body {
-    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
 
     .blog-content {
-      width: 60%;
+      width: 100%;
     }
     .bar-left {
-      width: 18%;
-      position: absolute;
-  
-      right: 0;
-      top: 0;
+      padding-left: 24px;
+      padding-right: 24px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 3rem;

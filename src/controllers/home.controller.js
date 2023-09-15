@@ -1,4 +1,5 @@
 import view from "../views/home.html";
+import blogArticleController from "./blog-article.controller";
 
 export default () => {
     const divElement = document.createElement("div");
@@ -41,6 +42,14 @@ closeButtonForm.addEventListener('click', () => {
     form.style.display = "none";
 });
 
+const cardBlog = divElement.querySelectorAll(".card-blog");
+if (cardBlog) {
+  cardBlog.forEach(function (div) {
+    div.addEventListener("click", function () {
+      blogArticleController(div.id);
+    });
+  });
+}
 
   return divElement;
 };
