@@ -45,6 +45,10 @@ body {
   }
 }
 
+section {
+  padding-bottom: 23px;
+}
+
 footer {
   width: 100%;
 
@@ -52,7 +56,6 @@ footer {
     background-color: $primary-color;
     height: 323px;
     padding: 30px 10%;
-    margin-top: 23px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -135,4 +138,6 @@ footer {
 
 #root {
   min-height: 100vh;
+  overflow-y: auto;
+  position: relative;
 }

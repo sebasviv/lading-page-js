@@ -158,6 +158,10 @@
   }
 
   .our-videos {
+
+    video {
+      cursor: pointer;
+    }
     @media (max-width: $breakpoint-mobile) { 
       img {
         max-width: 326.427px;
