@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
-  max-height: auto;
+
   height: 100%;
 
   @media (max-width: $breakpoint-mobile) {
@@ -112,7 +112,7 @@
     justify-content: center;
 
     .date-label {
-      width: 428px;
+      width: max-content;
       height: 51.097px;
       border-radius: 8px;
       background: $secondary-color;
@@ -121,12 +121,14 @@
       font-weight: 400;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 80px;
+      padding: 15px 5px;
     }
 
     .inputs-group-header {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      width: 100%;
       gap: 24px;
 
       .text-04 {
@@ -192,6 +194,7 @@
         align-items: center;
         justify-content: flex-end;
         display: none;
+
 
         .input-custom {
           width: 100% !important;

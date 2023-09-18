@@ -24,6 +24,10 @@
     }
   }
 
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Invierte los colores del icono */
+  }
+
   .icon-input-custom {
     position: absolute;
     right: 0;

@@ -29,6 +29,10 @@ $breakpoint-mobile: 767px;
 
 body {
   font-family: $font-family-lora;
+
+  a {
+    text-decoration: none;
+  }	
 }
 
 .security-section {

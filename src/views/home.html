@@ -1,7 +1,6 @@
 <section id="home">
-
-    <div class="header-home container background-image-custom">
-        <div class="header-custom">
+    <div class="header-home background-image-custom">
+        <div class="header-custom container ">
             <img src="/src/assets/icons/test.svg" alt="loguito" class="mb-4" width="222px" height="46px" />
             <div class="navbar-custom">
                 <a href="#/" class="link-home">Home</a>
@@ -11,7 +10,7 @@
                 <a href="#/blog">Blog</a>
             </div>
             <div class="btn-actions-group">
-                <div class="icon-search">
+                <div class="icon-search" hidden>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-search" viewBox="0 0 16 16">
                         <path
@@ -70,16 +69,31 @@
             <span class="text-03">Welcome to Caribbean Sprinter's Online Booking!</span>
             <span class="text-04">To get started, enter your info below</span>
         </div>
-        <div class="actions-home">
-            <div class="date-label">
-                <span class="text-01">ORIGIN</span>
+        <div class="actions-home container">
+            <div class="date-label select-custom-home">
+                <select name="">
+                    <option value="" disabled selected hidden>ORIGIN</option>
+                    <option value="">Departing Belize City</option>
+                    <option value="">Departing San Pedro</option>
+                    <option value="">Departing Caye Caulker</option>
+                </select>
                 <div class="diviser-02"></div>
-                <span class="text-01">DESTINATION</span>
+                <select name="">
+                    <option value="" disabled selected hidden>DESTINATION</option>
+                    <option value="">Departing Belize City</option>
+                    <option value="">Departing San Pedro</option>
+                    <option value="">Departing Caye Caulker</option>
+                </select>
             </div>
             <div class="inputs-group-header" id="inputs-group-header">
-                <div class="input-custom">
-                    <input type="text" placeholder="SELECT TRAVEL">
-                    </input>
+                <div class="select-form-home">
+                    <!-- <input type="text" placeholder="SELECT TRAVEL">
+                    </input> -->
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>SELECT TRAVEL</option>
+                        <option value="">One Way</option>
+                        <option value="">Round Trip</option>
+                    </select>
                     <div class="icon-input-custom">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="11" viewBox="0 0 35 11" fill="none">
                             <g clip-path="url(#clip0_957_2100)">
@@ -108,9 +122,19 @@
                         </svg>
                     </div>
                 </div>
-                <div class="input-custom">
-                    <input type="text" placeholder="# PASSENGERS">
-                    </input>
+                <div class="select-form-home">
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>PASSENGERS</option>
+                        <option value="">1 Passenger</option>
+                        <option value="">2 Passengers</option>
+                        <option value="">3 Passengers</option>
+                        <option value="">4 Passengers</option>
+                        <option value="">5 Passengers</option>
+                        <option value="">6 Passengers</option>
+                        <option value="">7 Passengers</option>
+                        <option value="">8 Passengers</option>
+                        <option value="">9 Passengers</option>
+                    </select>
                     <div class="icon-input-custom">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                             <g clip-path="url(#clip0_957_1879)">
@@ -193,9 +217,9 @@
                     </div>
                 </div>
                 <div class="input-custom">
-                    <input type="text" placeholder="# DATES">
+                    <input type="date" placeholder="# DATES">
                     </input>
-                    <div class="icon-input-custom">
+                    <div class="icon-input-custom" hidden>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26" fill="none">
                             <g clip-path="url(#clip0_957_1821)">
                                 <path
@@ -482,7 +506,7 @@
             </div>
             <span class="text-h2">BLOG</span>
             <div class="cards-blog-group">
-                <div class="card-blog">
+                <div class="card-blog" id="card-blog-1">
                     <div class="image-content">
                         <img src="/src/assets/home/Imagen_Blog_1.png" alt="">
                         <div class="card-blog-content">
@@ -513,7 +537,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-blog">
+                <div class="card-blog" id="card-blog-2">
                     <div class="image-content">
                         <img src="/src/assets/home/Imagen_Blog_2.png" alt="">
                         <div class="card-blog-content">
@@ -544,7 +568,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-blog">
+                <div class="card-blog" id="card-blog-3">
                     <div class="image-content">
                         <img src="/src/assets/home/Imagen_Blog_3.png" alt="">
                         <div class="card-blog-content">

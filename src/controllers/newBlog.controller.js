@@ -7,6 +7,7 @@ export default (id) => {
   if (id) {
     window.location.hash = "#/blog-article";
     setTimeout(() => {
+      document.documentElement.scrollTop = 0;
       blogRender(id);
     }, 100);
   }else {

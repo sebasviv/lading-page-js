@@ -49,18 +49,8 @@
       }
     }
   }
-  .header-background {
-    background-image: url("/src/assets/blog-article/Header\ BLOG\ ARTICLE.png");
-    width: 100%;
-    height: 704px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
 
   .blog-article-body {
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -89,5 +79,15 @@
         width: 100%;
       }
     }
+  }
+
+  .header-background {
+    background-image: url("/src/assets/blog-article/Header_BLOG_ARTICLE.png");
+    width: 100%;
+    height: 704px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
