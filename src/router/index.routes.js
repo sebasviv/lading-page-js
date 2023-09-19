@@ -1,5 +1,6 @@
 import { pages } from "../controllers/index";
 import { closeMenu } from "../controllers/hamburguer-menu.controller";
+import "../controllers/login-form-mobile.controller";
 
 
 const router = async (route) => {
